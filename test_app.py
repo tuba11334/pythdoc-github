@@ -10,7 +10,7 @@ def test_read_root():
         pytest.skip("Requires Python 3.13 or higher")
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello, World!"}
+    assert response.json() == {"message": "hi its my first fastapi app"}
 
 def test_read_items():
     response = client.get("/items")
